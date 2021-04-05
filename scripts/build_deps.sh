@@ -1,5 +1,5 @@
 #!/bin/bash -e
 
-./build.uv.sh
-./build.hwloc.sh
-./build.openssl.sh
+sh ./build.uv.sh
+sh ./build.hwloc.sh
+sh ./build.openssl.sh
