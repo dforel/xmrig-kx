@@ -1,21 +1,21 @@
 # XMRig
 
-[![Github All Releases](https://img.shields.io/github/downloads/xmrig/xmrig/total.svg)](https://github.com/C3Pool/xmrig/releases)
-[![GitHub release](https://img.shields.io/github/release/xmrig/xmrig/all.svg)](https://github.com/C3Pool/xmrig/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date/xmrig/xmrig.svg)](https://github.com/C3Pool/xmrig/releases)
-[![GitHub license](https://img.shields.io/github/license/xmrig/xmrig.svg)](https://github.com/C3Pool/xmrig/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xmrig/xmrig.svg)](https://github.com/C3Pool/xmrig/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xmrig/xmrig.svg)](https://github.com/C3Pool/xmrig/network)
+[![Github All Releases](https://img.shields.io/github/downloads/dforel/xmrig-kx/total.svg)](https://github.com/dforel/xmrig-kx/releases)
+[![GitHub release](https://img.shields.io/github/release/dforel/xmrig-kx/all.svg)](https://github.com/dforel/xmrig-kxreleases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxreleases)
+[![GitHub license](https://img.shields.io/github/license/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxblob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxstargazers)
+[![GitHub forks](https://img.shields.io/github/forks/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxnetwork)
 
 XMRig is a high performance, open source, cross platform RandomX, KawPow, CryptoNight and AstroBWT unified CPU/GPU miner and [RandomX benchmark](https://xmrig.com/benchmark). Official binaries are available for Windows, Linux, macOS and FreeBSD.
 
 ## Mining backends
 - **CPU** (x64/ARMv8)
 - **OpenCL** for AMD GPUs.
-- **CUDA** for NVIDIA GPUs via external [CUDA plugin](https://github.com/C3Pool/xmrig-cuda).
+- **CUDA** for NVIDIA GPUs via external [CUDA plugin](https://github.com/dforel/xmrig-cuda).
 
 ## Download
-* **[Binary releases](https://github.com/C3Pool/xmrig/releases)**
+* **[Binary releases](https://github.com/dforel/xmrig-kx/releases)**
 * **[Build from source](https://xmrig.com/docs/miner/build)**
 
 ## Usage

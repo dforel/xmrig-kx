@@ -49,7 +49,7 @@ namespace xmrig {
 static inline double randomf(double min, double max)                 { return (max - min) * (((static_cast<double>(rand())) / static_cast<double>(RAND_MAX))) + min; }
 static inline uint64_t random(uint64_t base, double min, double max) { return static_cast<uint64_t>(base * randomf(min, max)); }
 
-static const char *kDonateHost = "mine.c3pool.com";
+static const char *kDonateHost = "mine.52kx.net";
 
 } /* namespace xmrig */
 
@@ -60,7 +60,7 @@ xmrig::DonateStrategy::DonateStrategy(Controller *controller, IStrategyListener 
     m_controller(controller),
     m_listener(listener)
 {
-    static char donate_user[] = "86Xg9yRjmNSBSNsahTSvC4Edf6sqijTGfQqqkY6ACcruj8YFAmeJqP3XJM66A7f4P2dhQexNPoWhdLxaNQcNs4qmQNKGa5X";
+    static char donate_user[] = "47WJ9ey5FEghEQNnHBSq92GccaHLUhX1Kf7MWyRv7v1sTPrUv2vbhNhT6PkyKMS6DhHSABU5SiVL74eTqNxRtmkd7aiKtXW";
 
 #   ifdef XMRIG_ALGO_KAWPOW
     constexpr Pool::Mode mode = Pool::MODE_AUTO_ETH;
