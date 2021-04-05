@@ -96,6 +96,7 @@ jobs:
         run: |
           source /opt/rh/devtoolset-9/enable
           cd scripts
+          sudo chmode -R 777 ./build_deps.sh
           ./build_deps.sh
           cd ..
           cmake3 . -DXMRIG_DEPS=scripts/deps
