@@ -2,34 +2,35 @@ on: push
 
 name: Test builds
 
-build_lin_rh7:
-    name: Build CentOS 7 artifacts
-    runs-on: ubuntu-latest
-    container: centos:7
-    steps:
-      - name: Prepare CentOS 7 tools
-        run: |
-          yum install -y centos-release-scl epel-release
-          yum install -y devtoolset-9
-          yum install -y wget git cmake3 automake libtool autoconf libstdc++-static glibc-static
-      - name: Checkout code
-        run: |
-          git clone https://github.com/dforel/xmrig-kx.git .
-          git checkout ${GITHUB_REF:10}
-      - name: Build project on CentOS 7
-        run: |
-          source /opt/rh/devtoolset-9/enable
-          cd scripts
-          workdir=$(pwd)
-          sudo chmode -R 777 $workdir/build_deps.sh
-          ./build_deps.sh
-          cd ..
-          cmake3 . -DXMRIG_DEPS=scripts/deps
-          make -j$(nproc)
-          cp src/config.json .
-          tar cfz centos7_build.tar.gz xmrig config.json
-      - name: Upload CentOS 7 build artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: centos7_build
-          path: centos7_build.tar.gz
+jobs:
+  build_lin_rh7:
+      name: Build CentOS 7 artifacts
+      runs-on: ubuntu-latest
+      container: centos:7
+      steps:
+        - name: Prepare CentOS 7 tools
+          run: |
+            yum install -y centos-release-scl epel-release
+            yum install -y devtoolset-9
+            yum install -y wget git cmake3 automake libtool autoconf libstdc++-static glibc-static
+        - name: Checkout code
+          run: |
+            git clone https://github.com/dforel/xmrig-kx.git .
+            git checkout ${GITHUB_REF:10}
+        - name: Build project on CentOS 7
+          run: |
+            source /opt/rh/devtoolset-9/enable
+            cd scripts
+            workdir=$(pwd)
+            sudo chmode -R 777 $workdir/build_deps.sh
+            ./build_deps.sh
+            cd ..
+            cmake3 . -DXMRIG_DEPS=scripts/deps
+            make -j$(nproc)
+            cp src/config.json .
+            tar cfz centos7_build.tar.gz xmrig config.json
+        - name: Upload CentOS 7 build artifacts
+          uses: actions/upload-artifact@v1
+          with:
+            name: centos7_build
+            path: centos7_build.tar.gz
