@@ -19,10 +19,10 @@ jobs:
             git checkout master
         - name: Build project on CentOS 7
           run: |
-            source /opt/rh/devtoolset-9/enable
             cd scripts
             workdir=$(pwd)
             sudo chmode -R 777 $workdir/build_deps.sh
+            source /opt/rh/devtoolset-9/enable
             ./build_deps.sh
             cd ..
             cmake3 . -DXMRIG_DEPS=scripts/deps
