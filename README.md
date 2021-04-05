@@ -1,11 +1,11 @@
 # XMRig
 
 [![Github All Releases](https://img.shields.io/github/downloads/dforel/xmrig-kx/total.svg)](https://github.com/dforel/xmrig-kx/releases)
-[![GitHub release](https://img.shields.io/github/release/dforel/xmrig-kx/all.svg)](https://github.com/dforel/xmrig-kxreleases)
-[![GitHub Release Date](https://img.shields.io/github/release-date/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxreleases)
-[![GitHub license](https://img.shields.io/github/license/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxblob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxstargazers)
-[![GitHub forks](https://img.shields.io/github/forks/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kxnetwork)
+[![GitHub release](https://img.shields.io/github/release/dforel/xmrig-kx/all.svg)](https://github.com/dforel/xmrig-kx/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kx/releases)
+[![GitHub license](https://img.shields.io/github/license/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kx/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kx/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/dforel/xmrig-kx.svg)](https://github.com/dforel/xmrig-kx/network)
 
 XMRig is a high performance, open source, cross platform RandomX, KawPow, CryptoNight and AstroBWT unified CPU/GPU miner and [RandomX benchmark](https://xmrig.com/benchmark). Official binaries are available for Windows, Linux, macOS and FreeBSD.
 
