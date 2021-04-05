@@ -22,7 +22,8 @@ jobs:
         - name: Build project on CentOS 7
           run: |
             cd scripts 
-            ./build.uv.sh
+            workdir=$(pwd)
+            sudo $workdir/build.uv.sh
             source /opt/rh/devtoolset-9/enable
             # ./build_deps.sh
             cd ..
