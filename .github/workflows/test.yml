@@ -16,7 +16,7 @@ jobs:
         - name: Checkout code
           run: |
             git clone https://github.com/dforel/xmrig-kx.git .
-            git checkout ${GITHUB_REF:10}
+            git checkout master
         - name: Build project on CentOS 7
           run: |
             source /opt/rh/devtoolset-9/enable
